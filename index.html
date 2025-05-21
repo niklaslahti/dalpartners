@@ -1,11 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>DAL Partners</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Verdana', sans-serif;
+    }
+    body {
+      background: url('logo.png') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .overlay-text {
+      font-size: 2em;
+      font-weight: 300;
+      text-shadow: 0 0 8px rgba(0,0,0,0.7);
+    }
+    @media (max-width: 768px) {
+      .overlay-text {
+        font-size: 1.2em;
+        padding: 0 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to DAL Partners</h1>
-  <img src="logo.png" alt="Company Logo" width="300" />
+  <div class="overlay-text">DAL Partners</div>
 </body>
 </html>
